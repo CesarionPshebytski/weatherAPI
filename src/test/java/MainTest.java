@@ -24,7 +24,7 @@ public class MainTest {
         URLparams params = new URLparams();
         params.setParams("q", city);
         params.setParams("APPID", APPID);
-        String JSON = new URLgetJSON("http://api.openweathermap.org/data/2.5/weather", params).toString();
+        String JSON = new URLgetJSON(url, params).toString();
         assertEquals((new TempInKelvin(JSON).getTemperatureData() - 273.15), (new TempInCelsius(JSON).getTemperatureData()), 0);
     }
 }
