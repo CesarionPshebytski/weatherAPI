@@ -15,9 +15,9 @@ public class URLparams {
     public String toString() {
         Iterator iterator = params.entrySet().iterator();
         String urlParams = "?";
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             Map.Entry param = (Map.Entry) iterator.next();
-            urlParams += param.getKey()+"="+param.getValue();
+            urlParams += param.getKey() + "=" + param.getValue();
             if (iterator.hasNext()) urlParams += "&";
         }
         return urlParams;

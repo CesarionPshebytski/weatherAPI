@@ -7,8 +7,9 @@ import java.net.URL;
 
 public class URLgetJSON {
     private String inputLine;
+
     public URLgetJSON(String URL, URLparams urLparams) throws IOException {
-        java.net.URL oracle = new URL(URL+urLparams.toString());
+        java.net.URL oracle = new URL(URL + urLparams.toString());
         BufferedReader in = new BufferedReader(new InputStreamReader(oracle.openStream()));
         inputLine = in.readLine();
         in.close();

@@ -6,9 +6,11 @@ import org.json.simple.parser.ParseException;
 
 public class TempInKelvin {
     private String JSON;
-    public TempInKelvin(String JSON){
+
+    public TempInKelvin(String JSON) {
         this.JSON = JSON;
     }
+
     public double getTemperatureData() throws ParseException {
         JSONParser parser = new JSONParser();
         JSONObject obj = (JSONObject) parser.parse(JSON);

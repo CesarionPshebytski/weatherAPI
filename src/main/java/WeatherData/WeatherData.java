@@ -12,9 +12,10 @@ public class WeatherData {
         tempInKelvin = new TempInKelvin(JSON).getTemperatureData();
         tempInCelsius = new TempInCelsius(JSON).getTemperatureData();
     }
-    public String getWeatherData(){
-        return "desc: "+description+
-                "\ntemp in K: "+tempInKelvin+
-                "\ntemp in C: "+tempInCelsius;
+
+    public String getWeatherData() {
+        return "desc: " + description +
+                "\ntemp in K: " + tempInKelvin +
+                "\ntemp in C: " + tempInCelsius;
     }
 }
